@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url('../img/wp2899518.png') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    font-size: 30px;
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+}
+#begin-btn,#id-btn{
+    margin-left: 40%;
+    margin-bottom: 5px;
+}
+
+.begin-container{
+    display: none;
+    background-color: green;
+    color: #fff;
+    width: 50%;
+    margin: 10px auto;
+    padding: 0 20px;
+    height: 300px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    font-family: "Sofadi One", system-ui;
+
+}
+.begin-container ul{
+    margin-left:5px ;
+}
+ol{
+    margin-left: 10px;
+
+}
+ol li{
+    font-weight: normal;
+}
+.begin-container h2{
+    text-align: center;
+}
+  
+.container{
+    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+    backdrop-filter: blur(1.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+form > label{
+    width: auto;
+    margin: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+form >input{
+    width: 300px;
+    height: 50px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: none;
+    border:none;
+    border-bottom:2px black solid;
+
+}
+
+button{
+    background-color: green;
+    border: none;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 900;
+}
+button:hover{
+    cursor: pointer;
+}
