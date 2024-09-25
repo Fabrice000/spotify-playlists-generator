@@ -47,7 +47,7 @@ def generate(request):
             redirect_uri="http://localhost:8888/callback",
             scope='playlist-modify-private',
             show_dialog=True,
-            cache_path='./cache.txt')
+            cache_path='./.cache.txt')
             )
         except spotipy.exceptions.SpotifyOauthError as e:
             print(f"Error: {e}")
@@ -63,7 +63,7 @@ def generate(request):
                 print(f"{title} doesn't exist in Spotify. Skipped.")
         playlist = sp.user_playlist_create(user_id,f"{date} Billboard top 100" , public=False)
         sp.user_playlist_add_tracks(user_id,playlist["id"],tracks=uris)
-        return render(request, 'genrate.html' , locals())
+        return render(request, 'generate.html' , locals())
     else:
         return 0
 
