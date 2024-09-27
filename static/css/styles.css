@@ -12,6 +12,22 @@ body{
     font-family: "EB Garamond", serif;
     font-weight: 700;
 }
+.home{
+    text-decoration: none;
+    color: #fff;
+}
+.home > span{
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family:"EB Garamond", serif ;
+}
+.home:hover span {
+    opacity: 1;
+  }
 header{
     display: flex;
     flex-flow:  column wrap;

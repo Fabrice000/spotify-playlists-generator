@@ -9,10 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-from dotenv import load_dotenv
-
 # Charger les variables d'environnement à partir du fichier .env
-load_dotenv()
 
 
 from pathlib import Path
@@ -26,11 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
-DEBUG = os.getenv('DEBUG', default='False')
-# SECURITY WARNING: don't run with debug turned on in production!
+SECRET_KEY = 'django-insecure-*k#ybgk4qz@lfbo@-f$fmz&yrr1s%0r5z6m!-i^(v(f=0hj($q'
 
-ALLOWED_HOSTS = ["*","192.168.0.197"]
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = []
 
 
 # Application definition
