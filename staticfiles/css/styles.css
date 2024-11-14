@@ -100,6 +100,7 @@ button:hover{
 }
 footer p{
     text-align: center;
+    margin: 20px auto;
 }
 @media (max-width:375px){
     body{
