@@ -13,30 +13,20 @@ beginBtn.addEventListener("click", () => {
       beginContainer.style.display = "none";
     }
   });
-// idBtn.addEventListener("click",()=>{
-//   let id = prompt("Enter the client Id");
-//   console.log(id);
-//   let secret = prompt("Enter the client secret");
-//   console.log(secret);
-// })
 idBtn.addEventListener("click", () => {
   let id = localStorage.getItem('client_id');
   let secret = localStorage.getItem('client_secret');
   if ((!id||!secret)){
     let id ="";
     let secret="";
-    while (!id || !secret) {
+    while (id==="" || secret==="") {
+    alert("Please enter a valid information")
     id = prompt("Enter the client Id");
     secret = prompt("Enter the client secret");
-      if (!id||!secret) {
-        alert("Sorry, but you need to enter something.");
-      }
     }
     localStorage.setItem('client_id',id);
     localStorage.setItem('client_secret',secret)
     console.log("Client information is in local locale storage")
-    console.log(id==null);
-    console.log(secret)
     fetch("/process-client-data/", {
       method: "POST",
       headers: {
