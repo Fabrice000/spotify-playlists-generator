@@ -84,6 +84,7 @@ form >input{
 
 }
 
+
 button{
     background-color: green;
     border: none;
@@ -96,6 +97,9 @@ button{
 }
 button:hover{
     cursor: pointer;
+}
+footer p{
+    text-align: center;
 }
 @media (max-width:375px){
     body{
